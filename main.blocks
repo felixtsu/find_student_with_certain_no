@@ -1,0 +1,16 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="2pT2wU^rSZQyD-^KU+|Z">weights</variable><variable id="X4,RJ;ge%Z#`u`*Heiq#">target</variable></variables><block type="pxt-on-start" id="!EII0|pSl)8_MjzI*/yb" x="0" y="0"><statement name="HANDLER"><block type="bsearch_startGame" id="S*l47a2}S1Dt6m2i1uuZ"></block></statement></block><block type="bsearch_solvePuzzle" id="UI4kuKPYW)KuA4O]oacA" x="10" y="250"><comment pinned="true" h="205" w="412">这个事件在老师安排任务以后运行
+
+事件变量：
+weights是学生编号的数组，学生已经按照编号从小到大排好了
+target是老师要找的编号，需要找到这个编号的位数
+
+
+
+
+</comment><value name="HANDLER_DRAG_PARAM_weights"><shadow type="variables_get_reporter" id=")C@YvoqT`k8Bw,2fZ3vS"><field name="VAR" id="2pT2wU^rSZQyD-^KU+|Z">weights</field></shadow></value><value name="HANDLER_DRAG_PARAM_target"><shadow type="variables_get_reporter" id="{Osa{N,#;XU+AEG+#f//"><field name="VAR" id="X4,RJ;ge%Z#`u`*Heiq#">target</field></shadow></value><statement name="HANDLER"><block type="gameSplash" id="+lU+QAD?#vb+bX,:+2I?"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="title"><shadow type="text"><field name="TEXT"></field></shadow><block type="bsearch_at" id="O)Kh$g=J)_b[jwmY.KlG"><comment pinned="true" h="264" w="390">这个指令可以让指定位置的学生报一下ta的编号
+
+比如现在就是拿到第222位的学生的编号</comment><value name="index"><shadow type="math_number" id="Aq6WX1=-^fz?hSkUWW_J"><field name="NUM">222</field></shadow></value></block></value><value name="subtitle"><shadow type="text" id="D:^0#^9lEN6pr4pZOF^8"><field name="TEXT"></field></shadow></value><next><block type="gameSplash" id="b$XKz)lYq_vA!zB+mWuv"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="title"><shadow type="text"><field name="TEXT"></field></shadow><block type="bsearch_size" id="}VQ`O,y:x1|j]Qc*0b6l"><comment pinned="true" h="165" w="397">这个指令可以知道现在一共有多少人
+
+这个数量每次都不一样的哦</comment></block></value><value name="subtitle"><shadow type="text" id="K0FvSsvvw(p)2iBzQ@):"><field name="TEXT"></field></shadow></value><next><block type="bsearch_submitAnswer" id="SepA%:+(5t.X2e5^oZ2x"><comment pinned="true" h="216" w="367">找到目标学生以后，就用这个指令告诉老师
+
+现在是告诉老师第 0 位就是要找的人，哈，跟瞎蒙一个没有区别</comment><value name="answer"><shadow type="math_number" id="JLN#n|_Bt;Qc.UF]s8]B"><field name="NUM">0</field></shadow></value></block></next></block></next></block></statement></block></xml>
